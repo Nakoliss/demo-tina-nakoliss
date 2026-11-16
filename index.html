@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrots 'N' Cake — Free Belly Fat Blueprint</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F7F3EA;--sage:#8A9B7A;--sage-light:#E9EDE2;--terra:#C96A4B;--terra-dark:#A95034;--ink:#3A322B;--grey:#6B6259;--white:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Open Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+h1,h2,h3{font-family:'Playfair Display',serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{background:var(--white);border-bottom:3px solid var(--terra)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
+.logo{font-family:'Playfair Display',serif;font-weight:800;font-size:26px;color:var(--ink)}
+.logo span{color:var(--terra)}
+header nav a{font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink);text-decoration:none;margin-left:22px;font-weight:600}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;padding:64px 0 56px;align-items:center}
+.eyebrow{display:inline-block;background:var(--terra);color:#fff;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;padding:7px 16px;border-radius:999px;margin-bottom:18px;font-weight:700}
+.hero h1{font-size:50px;line-height:1.1;margin-bottom:16px}
+.hero p.lede{font-size:18px;color:var(--grey);margin-bottom:22px}
+.hero p.lede b{color:var(--ink)}
+.card{background:var(--white);border:1px solid #E5DCC8;border-radius:12px;padding:28px;box-shadow:0 8px 30px rgba(0,0,0,.06)}
+.card img{width:100%;border-radius:8px;margin-bottom:16px}
+.card h3{font-size:22px;margin-bottom:6px}
+.card p{font-size:14px;color:var(--grey);margin-bottom:16px}
+.card label{display:block;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin:10px 0 4px;font-weight:700}
+.card input{width:100%;padding:12px 14px;border:1px solid #D8CDB2;border-radius:8px;font-size:15px;font-family:'Open Sans',sans-serif}
+.card button{width:100%;margin-top:18px;background:var(--terra);color:#fff;border:0;border-radius:8px;padding:15px;font-size:16px;letter-spacing:1px;cursor:pointer;font-weight:700}
+.card button:hover{background:var(--terra-dark)}
+.fine{font-size:12px;color:var(--grey);text-align:center;margin-top:10px}
+.banner{border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.08);margin:0 0 8px}
+.banner img{width:100%;display:block}
+.banner-cap{text-align:center;font-size:13px;color:var(--grey);margin-bottom:8px}
+.steps{padding:48px 0}
+.steps h2,.quotes h2,.programs h2,.about h2{text-align:center;font-size:32px;margin-bottom:8px}
+.center{text-align:center;color:var(--grey);margin-bottom:32px}
+.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.step{background:var(--white);border:1px solid #E5DCC8;border-radius:12px;padding:26px}
+.step .num{font-family:'Playfair Display',serif;font-size:40px;color:var(--terra);line-height:1;font-weight:800}
+.step h3{font-size:20px;margin:10px 0 6px}
+.step p{font-size:14px;color:var(--grey)}
+.step p b{color:var(--ink)}
+.quotes{padding:48px 0;background:var(--white);border-top:1px solid #EFE7D3;border-bottom:1px solid #EFE7D3}
+.quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+blockquote{background:var(--cream);border-left:4px solid var(--terra);border-radius:0 12px 12px 0;padding:22px}
+blockquote p{font-size:15px;font-style:italic}
+blockquote footer{font-size:13px;letter-spacing:1px;text-transform:uppercase;margin-top:12px;color:var(--terra-dark);font-weight:700}
+.videoline{text-align:center;margin-top:28px;font-size:15px;color:var(--grey)}
+.videoline b{color:var(--ink)}
+.programs{padding:48px 0}
+.prog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.prog{background:var(--white);border:1px solid #E5DCC8;border-radius:12px;padding:26px}
+.prog.gold{border:2px solid var(--terra)}
+.prog .tag{display:inline-block;background:var(--terra);color:#fff;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin-bottom:10px;font-weight:700}
+.prog h3{font-size:20px}
+.prog .price{font-family:'Playfair Display',serif;font-size:26px;margin:8px 0;font-weight:700}
+.prog .price span{font-size:14px;color:var(--grey);font-family:'Open Sans',sans-serif;font-weight:400}
+.prog p{font-size:14px;color:var(--grey);margin-bottom:14px}
+.prog ul{font-size:14px;color:var(--grey);padding-left:18px;margin-bottom:14px}
+.prog a{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:11px 18px;border-radius:8px;font-weight:700}
+.prog.gold a{background:var(--terra)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding:56px 0;align-items:center}
+.about h2{text-align:left}
+.about p{color:var(--grey);margin-bottom:14px}
+.about p b{color:var(--ink)}
+.about .tagline{font-family:'Playfair Display',serif;font-size:24px;color:var(--terra);margin-bottom:14px}
+.cta{background:var(--ink);color:#fff;text-align:center;padding:56px 24px}
+.cta h2{font-size:32px;margin-bottom:10px}
+.cta p{color:#D8D8D8;margin-bottom:22px}
+.cta a{display:inline-block;background:var(--terra);color:#fff;text-decoration:none;font-size:16px;letter-spacing:1px;padding:15px 28px;border-radius:8px;font-weight:700}
+footer{padding:28px 24px;text-align:center;font-size:12px;color:var(--grey)}
+@media(max-width:760px){.hero,.about{grid-template-columns:1fr}.hero h1{font-size:36px}.step-grid,.quote-grid,.prog-grid{grid-template-columns:1fr}header nav{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="logo">Carrots <span>'N'</span> Cake</div>
+    <nav><a href="#">Programs</a><a href="#">Guides</a><a href="#">Podcast</a><a href="#">Shop</a></nav>
+  </div>
+</header>
+
+<section class="wrap hero">
+  <div>
+    <span class="eyebrow">Free Belly Fat Blueprint</span>
+    <h1>Feel Strong, Look Lean, Live Fully.</h1>
+    <p class="lede">Helping women over 40 <b>lose fat, build muscle, and feel confident in their bodies again</b> — without giving up the foods they love or spending hours in the gym.</p>
+    <p class="lede">Start with the free blueprint: <b>stop guessing why your belly fat won't budge</b> — 6 root causes, and how to spot yours in 5 minutes.</p>
+  </div>
+  <div class="card">
+    <img src="assets/belly-fat-blueprint.jpg" alt="Belly Fat Blueprint cover">
+    <h3>Get the free blueprint</h3>
+    <p>Just your first name and email — that's it.</p>
+    <form onsubmit="return false">
+      <label for="fn">First name</label>
+      <input id="fn" type="text" placeholder="Your first name">
+      <label for="em">Email address</label>
+      <input id="em" type="email" placeholder="you@example.com">
+      <button type="submit">Send Me This Blueprint!</button>
+    </form>
+    <p class="fine">Maquette conceptuelle — this form collects nothing. Free. Instant download. No spam, just the real deal about what's actually going on in your body.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="banner"><img src="assets/transformations.jpg" alt="Fit+Fueled client transformations"></div>
+  <p class="banner-cap">Real Fit+Fueled transformations — women over 40, real life, no all-or-nothing diets.</p>
+</section>
+
+<section class="wrap steps">
+  <h2>What happens next</h2>
+  <p class="center">Three simple steps — you stay in control the whole way.</p>
+  <div class="step-grid">
+    <div class="step"><div class="num">1</div><h3>Get the free blueprint</h3><p>Enter your first name and email and get the <b>Belly Fat Blueprint</b> right away — the 6 root causes of stubborn belly fat, and how to spot yours in 5 minutes.</p></div>
+    <div class="step"><div class="num">2</div><h3>Go deeper, your way</h3><p>Explore the free <b>GLP-1 Microdosing Masterclass</b>, the guides from <b>$9</b>, or the <b>HTMA test + custom protocol for $297</b> (reg. $397). Everything is priced openly — no call required.</p></div>
+    <div class="step"><div class="num">3</div><h3>Apply for Fit+Fueled</h3><p>When you're ready, apply for <b>Fit+Fueled</b> — 1:1 nutrition coaching, weekly private check-ins, 24/7 messaging, new workouts every 12 weeks, and group calls with Tina and Emma. Lose 10–30+ pounds, build lean muscle, and feel like yourself again.</p></div>
+  </div>
+</section>
+
+<section class="quotes">
+  <div class="wrap">
+    <h2>Real women. Real results.</h2>
+    <p class="center">From Tina's clients — in their own words.</p>
+    <div class="quote-grid">
+      <blockquote><p>“This morning I was just finishing my potassium smoothie and talking to my husband — I told him it is pretty crazy that these small changes over the past week or so — way less salty cravings and way less sugar cravings. AND having very regular bowel movements!”</p><footer>— HTMA client</footer></blockquote>
+      <blockquote><p>“After 3 months of consistent supplementation, I am definitely starting to feel better and wayyy less hair loss.”</p><footer>— HTMA client</footer></blockquote>
+      <blockquote><p>“I added the Adrenal Cocktail in the morning and I could tell that it helped that it gave me more energy in the afternoon. If I take it in the morning I can easily make it through the whole day. If I don't take it, I wonder 'why am I dragging?'.”</p><footer>— HTMA client</footer></blockquote>
+      <blockquote><p>“Just reflecting on a few months ago — I have way more energy throughout the day ... it's really awesome.”</p><footer>— HTMA client</footer></blockquote>
+    </div>
+    <p class="videoline">Watch video stories from <b>Britani, Tracy, Jami, Tiffany, Lanna and Lynn</b> — real Fit+Fueled clients, in their own words on video.</p>
+  </div>
+</section>
+
+<section class="wrap programs">
+  <h2>Ways to work with Tina</h2>
+  <p class="center">Start free — then pick the level that fits where you are.</p>
+  <div class="prog-grid">
+    <div class="prog gold">
+      <span class="tag">Flagship · 1:1</span>
+      <h3>Fit+Fueled</h3>
+      <div class="price">Application only <span>· price shared after you apply</span></div>
+      <p>The ultimate body recomposition program for women over 35: 1:1 nutrition coaching, weekly private check-ins, 24/7 messaging, macro adjustments, new workouts every 12 weeks, group calls Mondays &amp; Wednesdays at 12PM EST, community, and discounted functional testing.</p>
+      <a href="#">Apply for Fit+Fueled</a>
+    </div>
+    <div class="prog">
+      <span class="tag">Test + protocol</span>
+      <h3>HTMA</h3>
+      <div class="price">$297 <span>reg. $397 · save $100</span></div>
+      <p>Hair tissue mineral analysis test + practitioner interpretation + custom protocol: test kit mailed to you, supplement recommendations, private Facebook group, mineral-rich food lists and recipes.</p>
+      <a href="#">Get $100 off HTMA</a>
+    </div>
+    <div class="prog">
+      <span class="tag">Self-paced</span>
+      <h3>Peptides &amp; Guides</h3>
+      <div class="price">$19–$197 <span>· guides from $9</span></div>
+      <p>Peptides for Women $19 · Peptides for Practitioners Certification $197 (reg. $497) · Peptide Consult $74 · Business Basics $47 · Guides &amp; meal plans $9–$37 · STACKED GLP-1 + Peptides $29/month.</p>
+      <a href="#">Browse the shop</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap about">
+  <div>
+    <div class="tagline">Pro-muscle. Pro-donut. Anti-sad-diets.</div>
+    <h2>Meet Tina</h2>
+    <p><b>Tina Haupert, FDN-P, RCPC</b> — functional nutrition practitioner, personal trainer, and mom of two. 18 years online, author of <b>The Everything Macro Cookbook</b>, host of the Carrots 'N' Cake Podcast.</p>
+    <p>She helps women over 40 lose stubborn fat, build lean muscle, and feel like themselves again — <b>without giving up carbs, wine nights, or their social life</b>. No generic plan and a “good luck!” — you're not doing it wrong, your old approach just isn't working anymore.</p>
+  </div>
+  <div class="card">
+    <h3>You're not doing it wrong</h3>
+    <p>Your old approach just isn't working anymore. The blueprint shows you the 6 root causes behind stubborn belly fat after 40 — and how to spot yours in 5 minutes. Free, instant, no spam.</p>
+    <form onsubmit="return false">
+      <label for="fn2">First name</label>
+      <input id="fn2" type="text" placeholder="Your first name">
+      <label for="em2">Email address</label>
+      <input id="em2" type="email" placeholder="you@example.com">
+      <button type="submit">Send Me This Blueprint!</button>
+    </form>
+    <p class="fine">Maquette conceptuelle — this form collects nothing.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Ready to feel strong, look lean, live fully?</h2>
+  <p>Start with the free Belly Fat Blueprint. First name and email — that's all it takes.</p>
+  <a href="#">Get the free blueprint →</a>
+</section>
+
+<footer>
+  Maquette conceptuelle — démo non affiliée, créée pour montrer une page de capture possible pour Carrots 'N' Cake. Prix et témoignages tirés du site public de Tina Haupert.
+</footer>
+</body>
+</html>
